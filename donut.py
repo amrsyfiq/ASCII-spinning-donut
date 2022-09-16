@@ -48,7 +48,7 @@ def text_display(char, x, y):
     # display RGB text
     text = font.render(str(char), True, hsv2rgb(hue, 1, 1))
     # display white text
-    text = font.render(str(char), True, WHITE)
+    # text = font.render(str(char), True, WHITE)
     text_rect = text.get_rect(center=(x, y))
     screen.blit(text, text_rect)
 
@@ -120,8 +120,8 @@ while running:
     k = 0
 
     # rotation angle & speed
-    A += 0.03
-    B += 0.07
+    A += 0.04
+    B += 0.02
 
     hue += 0.001
 
